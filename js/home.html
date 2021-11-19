@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор визиток</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/home_style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-3 text-center">Калькулятор визиток</h1>
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <div class="calc shadow-lg p-4 mt-5">
+          <h3>Расчёт стоимости</h3>
+          <form action="" class="form-group">
+            <label for="card-quantity">Количество</label>
+            <input type="number" min="30" value="90" step="30" class="form-control" id="card-quantity">
+            <label for="card-paper">Бумага</label>
+            <select class="form-control" id="card-paper">
+            </select>
+            <label for="card-color">Цветность</label>
+            <select class="form-control" id="card-color"> 
+            </select>
+          </form>
+          <h4>Стоимости тиража</h4>
+          <p class="display-4"><span id="final_price">0</span> Руб.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="text-center mt-5">
+          <img src="img/1_0.png" id="card_1_0">
+          <img src="img/1_1.png" id="card_1_1">
+          <img src="img/4_0.png" id="card_4_0">
+          <img src="img/4_1.png" id="card_4_1">
+          <img src="img/4_4.png" id="card_4_4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/my.js"></script>
+</body>
+</html>
